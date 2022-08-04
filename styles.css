@@ -1,0 +1,268 @@
+@charset "utf-8";
+
+@media screen and (min-width: 200px) and (max-width:480px){
+	header h1{
+		padding: .25em
+	
+	}
+	nav{
+		font-size: 1.3em;
+		width:80%
+		
+	}
+	nav ul{
+		margin: 0;
+		padding: .1em;
+	}
+	nav li{
+		background-color:  aqua;
+		border-radius: 1em;
+		list-style-type: none;
+		width:100%;
+		margin-bottom: 1em; 
+		text-align:center;
+	}
+	nav a{
+		padding: .8em;
+		display: inline-block;
+		width:100%;
+	}
+}
+@media screen and (min-width: 481px) and (max-width:768px){
+	header h1{
+		padding: .6em;
+		text-align: center;
+	}
+	nav{
+		background-color: blue;
+		font-size: 1.4em;
+		margin:0;
+		padding: 0;
+		text-align: center;
+	}
+	nav ul{
+		margin: 0;
+		padding: 0;
+	}
+	nav li{
+		display: inline;
+	}
+	nav a{
+		display: inline-block;
+		padding: 1em;
+		text-decoration: none;
+	}
+}
+
+
+
+
+
+body, html {
+	margin:0;
+	padding:0;
+	}
+	
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+    background-color: hsl(230, 8%, 15%);;
+}
+
+li, a, button{
+    font-family: "montserrat", sans-serif;
+    font-weight:500;
+    font-size:16px;
+    color: #fff6f6;
+    text-decoration:none;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+
+
+
+
+
+
+
+
+nav{
+	order: 1;
+}
+
+.nav_links{
+    list-style:none;
+}
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+.nav_links li a:hover {
+color:#0088a9
+}
+.cta {
+	 order: 2; 
+}
+button{
+    margin-left: 20px;
+    padding:9px 25px;
+    background-color: rgba(0,136,169,1);
+    border:none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+button:hover{
+    background-color: rgba(0,136,169,0.8);
+}
+
+body  {
+	font: 100% Verdana, Arial, Helvetica, sans-serif;
+	text-align: center;
+	background: url(../background.jpg) repeat;
+	height: 100%;
+}
+ #mainContent {
+	margin: 0 auto;
+	padding: 0;
+	width: 900px;
+	text-align: left;
+	height: 100%;
+} 
+.cycle-slideshow img{
+	width: 100%;
+}
+.section{
+	width:400px;
+	float:left;
+	margin: right 40px;
+	background-repeat: no-repeat;
+	position: relative; 
+	height: 600px;
+}
+.section.one{
+	background-image:url(images/dog-png-5295254_1280\ \(1\).png)
+}
+.section.two{
+	background-image:url(images/dongbas.png)
+}
+.overlay{
+	background-color: rgba(226, 226, 226, 0.5);
+	position:absolute;
+	top: 500px;
+	width: 400px;
+	height: 50px;
+	overflow: hidden;
+	-webkit-transition: all 1s ease-in-out .2s;
+	-moz-transition: all 1s ease-in-out .2s;
+	-ms-transition: all 1s ease-in-out .2s;
+	-o-transition: all 1s ease-in-out .2s;
+	transition: all 1s ease-in-out .2s;
+}
+.overlay:hover{
+	height: 600px;
+	top: 0;
+}
+
+
+#mainContent img {
+	background: #ccc;
+	display: block;
+	padding: 3px;
+	border: 1px solid #999;
+	margin: 1.6em auto;
+}
+#mainContent p {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 0.95em;
+	line-height: 1.6;
+	padding-right: 1.6em;
+	padding-left: 1.6em;
+	color: rgb(255, 255, 255);
+	margin-top: .5em;
+}
+#mainContent a {
+	font-weight: bold;
+	color: #602E0C;
+	text-decoration: none;
+	border-bottom: 1px dotted #602E0C;
+	padding-bottom: .1em;
+}
+#mainContent a:hover {
+	color: #BA3818;
+	border: none;
+}
+
+
+#mainContent .article, #mainContent .galleryArticle {
+	background: hsl(230, 8%, 15%);;
+	padding: 0.5em 0.5em 2em;
+	margin-bottom: 1em;
+	border: 2px solid #bbb;
+	border-top: none;
+}
+
+#mainContent h3 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 0.95em;
+	margin: 1em .5em;
+	color: rgba(0,136,169,1);;
+}
+
+#mainContent .galleryArticle h1 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 2.5em;
+	line-height:1.75em;
+	text-align: center;
+	color: rgb(255, 255, 255);
+	margin: 1em 2em 0;
+	font-weight: normal;
+	padding: 0;
+
+	background: none;
+}
+#mainContent .galleryArticle h2 {
+	position: relative;
+	top: -.5em;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 1.2em;
+	line-height: 0;
+	color: rgb(255, 255, 255);
+	font-weight: normal;
+	text-align: center;
+	padding: 0 0 55px;
+	background: url(file:///Macintosh%20HD/Users/ireichert/Downloads/images/headline_bkg6.jpg) no-repeat center bottom;
+}
+#mainContent .galleryArticle h3 {
+	text-align: center;
+}
+
+	
+
+
+
+
+
+.clearfloat { 
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+.rightAlign    {
+	text-align: right;
+}
+.topline{
+		border-top: 1px dotted rgb(0, 0, 0);
+}
